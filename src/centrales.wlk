@@ -10,6 +10,10 @@ object burns {
 	method contamina() {
 		return varillas > 20
 	}
+	
+	method varillas(cantidadDeVarillas){
+		varillas = cantidadDeVarillas
+	}
 }
 
 object exBosque {
@@ -23,6 +27,10 @@ object exBosque {
 	
 	method contamina() {
 		return true
+	}
+	
+	method capacidad(unaCapacidad){
+		capacidad = unaCapacidad
 	}
 }
 
@@ -39,6 +47,10 @@ object elSuspiro {
 	
 	method contamina() {
 		return false	
+	}
+	
+	method agregarTurbina(produccionDeLaTurbina){
+		produccionPorTurbinas.add(produccionDeLaTurbina)
 	}
 
 }
