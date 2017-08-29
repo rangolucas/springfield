@@ -4,7 +4,7 @@ object burns {
 	var varillas
 	
 	method produccion() {
-		return 0.1 * varillas * 10e6
+		return 0.1 * varillas
 	}
 	
 	method contamina() {
@@ -59,6 +59,6 @@ object elSuspiro {
 object hidroelectrica {
 	
 	method produccion(){
-		return 2 * 10e6 * albuquerque.caudal()
+		return 2 * albuquerque.caudal()
 	}
 }
